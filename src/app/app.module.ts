@@ -8,13 +8,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
+import { GreetingComponent } from './greeting/greeting.component';
 
 // the app component belongs to this module
 // defines an NgModule
 @NgModule({
   declarations: [
     AppComponent,
-    HelloComponent
+    HelloComponent,
+    GreetingComponent
   ],
   imports: [
     BrowserModule,
