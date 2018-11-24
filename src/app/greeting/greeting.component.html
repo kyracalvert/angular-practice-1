@@ -2,7 +2,8 @@
 and binding to each index -->
 <div>
   <ul>
-    <!-- | json shows the values of the objects from the component -->
-    <li *ngFor="let name of names">{{name | json}}</li>
+   <!-- names is the variable carried over from the component -->
+   <!-- person is the index of each name in that name array -->
+    <li *ngFor="let person of names">{{person.name}}</li>
   </ul>
 </div>
