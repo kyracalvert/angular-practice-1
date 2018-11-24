@@ -1,6 +1,8 @@
-<!-- interates over names from the 'names' array in component -->
+<!-- interates over names from the 'names' array in component,
+and binding to each index -->
 <div>
   <ul>
-    <li *ngFor="let name of names">{{name}}</li>
+    <!-- | json shows the values of the objects from the component -->
+    <li *ngFor="let name of names">{{name | json}}</li>
   </ul>
 </div>
