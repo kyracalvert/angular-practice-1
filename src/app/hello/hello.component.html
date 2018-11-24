@@ -1,5 +1,8 @@
 <!-- conditional render  -->
+<!-- ngIf and else -->
 <p *ngIf="!greeting; else showGreeting">Enter a greeting inside of the text box.</p>
+
+<!-- use ng-template to create a 'function' template -->
 <ng-template #showGreeting>
   <p>You've added a greeting to the text box!</p>
 </ng-template>
