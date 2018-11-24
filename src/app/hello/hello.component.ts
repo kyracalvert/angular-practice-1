@@ -15,10 +15,6 @@ export class HelloComponent implements OnInit {
     
   }
 
-  log(event) {
-    console.log(event);
-  }
-
   ngOnInit() {
   }
 

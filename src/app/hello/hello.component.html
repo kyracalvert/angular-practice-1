@@ -19,8 +19,10 @@ the input text box will update the "greeting" variable anytime something is adde
 the text box -->
 <!-- <input type="text" [(ngModel)]="greeting" (keyup)="log($event)"> -->
 
-<div>
+<!-- <div>
   <ul>
     <li *ngFor="let person of people">{{person.name}}</li>
   </ul>
-</div>
+</div> -->
+
+<app-greeting *ngFor="let person of people" [person]="person"></app-greeting>
