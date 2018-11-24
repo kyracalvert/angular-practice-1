@@ -1,20 +1,26 @@
 <!-- conditional render  -->
 <!-- ngIf and else -->
-<p *ngIf="!greeting; else showGreeting">Enter a greeting inside of the text box.</p>
+<!-- <p *ngIf="!greeting; else showGreeting">Enter a greeting inside of the text box.</p> -->
 
 <!-- use ng-template to create a 'function' template -->
-<ng-template #showGreeting>
+<!-- <ng-template #showGreeting>
   <p>You've added a greeting to the text box!</p>
-</ng-template>
+</ng-template> -->
 <!-- binds greeting variable 
 from the hello component -->
-<p>
+<!-- <p>
   {{greeting}}
-</p>
+</p> -->
 
 <!-- (keyup) is a click event that responds each button click 
 () represents one-way data binding -->
 <!-- {()} represents two-way data binding. adding the "greeting" ngModel dictates that
 the input text box will update the "greeting" variable anytime something is added within
 the text box -->
-<input type="text" [(ngModel)]="greeting" (keyup)="log($event)">
+<!-- <input type="text" [(ngModel)]="greeting" (keyup)="log($event)"> -->
+
+<div>
+  <ul>
+    <li *ngFor="let person of people">{{person.name}}</li>
+  </ul>
+</div>

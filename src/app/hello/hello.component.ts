@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PEOPLE } from '../person/person';
 
 @Component({
   selector: 'app-hello',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HelloComponent implements OnInit {
   // typescript declaration of variable
   greeting: string;
+  people = PEOPLE;
 
   constructor() {
     
